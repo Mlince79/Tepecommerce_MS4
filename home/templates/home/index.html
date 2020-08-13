@@ -1,6 +1,31 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock%}
+
 {% block content %}
-    <h1 class="display-4 text-success">It work's</h1>
+     <header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="#" width="" height="240" alt="" loading="">
+            </a>
+            <ul id="menu">
+                <li>
+                    <a href="#">CONTACT ME</a>
+                </li>
+                <li>
+                    <a href="#">ABOUT ME</a>
+                </li>
+                <li>
+                    <a href="#">SHOP</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 {% endblock %}
