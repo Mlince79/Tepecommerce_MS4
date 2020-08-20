@@ -1,0 +1,120 @@
+/*header*/
+html {
+    height: 100%;
+}
+
+body {
+    color: black;
+    font-family: Oswald;
+}
+
+.navbar-brand {
+    padding-left: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #777777;
+}
+
+.bg-light {
+    background-color: white;
+}
+
+#logo {
+    height: 250px;
+}
+
+#main-nav {
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 4px;
+}
+
+#main-nav, .collapse {
+    float: right;
+}
+
+#main-nav, a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.navbar-default a:hover {
+    border-bottom: 1px solid #777777;
+    color: #777777;
+}
+
+/*hero-image*/
+#hero-image {
+    height: 1000px;
+    width: 100%;
+    background: url('/media/marcela.jpg') no-repeat center center;
+}
+
+#hero-outer {
+    height: 1000px;
+    width: 100%;
+}
+
+#hero-image img {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#cover-text #cover-text h2 {
+    color: black;
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 200px;
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute;
+}
+
+/* fixed top navbar only on medium and up */
+@media only screen and (max-width: 600px) {
+    #logo {
+        height: 50%;
+        width: 50%;
+    }
+    .navbar-brand {
+        height: auto;
+        padding-left: inherit;
+    }
+    .navbar-brand {
+    width: 70%;
+    }
+}
+@media only screen and (max-width: 990px) {
+    .w-100 {
+        display: contents;
+    }
+}
