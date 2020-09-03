@@ -26,7 +26,7 @@ body {
 }
 
 #logo {
-    height: 250px;
+    height: 210px;
 }
 
 #main-nav {
@@ -50,41 +50,67 @@ body {
     color: #777777;
 }
 
-/*hero-image
-#hero-image {
-    width: 100%;
-    height: auto;
-    background: url('/media/marcela.jpg') no-repeat center center;
-}*/
-
 .responsive {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
-#hero-outer {
-    height: 1000px;
+.logo-font{
+    padding-top: 55px;
+}
+
+#illustration{
+    clear: both;
+    line-height: 0;
+}
+
+/*grid*/
+
+.container-gallery {
+    padding-top: 85px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.grid {
+    max-width: 100%;
+}
+
+.grid img {
+    margin-top: 0;
+    vertical-align: inherit;
     width: 100%;
 }
 
-#hero-image img {
-    display: block; 
-    margin-left: auto;
-    margin-right: auto;
-
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+.content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 28px;
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0;
+    right: 0;
+    height: 99%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: #F2B442;
+}
+
+.card:hover .overlay {
+    opacity: 1;
 }
 
 @keyframes hero-zoom {
@@ -142,6 +168,15 @@ body {
     #hero-image{
         height: 50%;
         width: 50%;
+    }
+     .responsive {
+    width: 55%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .responsive {
+    width: 75%;
     }
 }
 
