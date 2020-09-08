@@ -3,10 +3,17 @@ html {
     height: 100%;
 }
 
+.header-container{
+    margin-top: 60px;
+}
 body {
     color: black;
     font-family: Oswald;
     height: calc(100vh - 1px);
+}
+
+.navbar {
+    padding-right: 110px;
 }
 
 .navbar-brand {
@@ -27,6 +34,7 @@ body {
 
 #logo {
     height: 210px;
+    padding-left: inherit;
 }
 
 #main-nav {
@@ -65,10 +73,6 @@ body {
 }
 
 /*grid*/
-
-.container-gallery {
-    padding-top: 85px;
-}
 
 .gallery {
     display: flex;
@@ -109,10 +113,30 @@ body {
     background: #F2B442;
 }
 
+.shop-now-button {
+    background: #F2B442;;
+    color: white;
+    min-width: 260px;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus {
+    background: rgb(179, 102, 3);
+    color: white;
+}
+
+.my-0:hover p {
+    color: #F2B442;
+}
+
 .card:hover .overlay {
     opacity: 1;
 }
 
+.pleca {
+    
+}
 @keyframes hero-zoom {
     from {
         transform: scale(1);
@@ -147,9 +171,12 @@ body {
         height: 50%;
         width: 50%;
     }
+    .navbar {
+        padding-right: 0;
+    }
     .navbar-brand {
-        height: auto;
         padding-left: inherit;
+        margin-right: 0;
     }
     .navbar-brand {
     width: 70%;
@@ -177,6 +204,9 @@ body {
 @media only screen and (max-width: 1024px) {
     .responsive {
     width: 75%;
+    }
+    .header-container {
+        margin-top: 180px;
     }
 }
 

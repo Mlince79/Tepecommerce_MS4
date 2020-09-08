@@ -38,18 +38,18 @@
 <body>
     <header class="container-fluid fixed-top">
         <nav class="navbar bg-white navbar-expand-lg">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{% url 'home' %}">
                 <!--<img id="logo" src="static/img/firma_inicio.png">-->
                 <img id="logo" src="{% static "img/firma_inicio.png" %}" alt="Marcela">
             </a> 
-        <div class="navbar-nav bg-white navbar-light w-100 navbar-text text-right">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            {% include 'includes/main-nav.html' %}  
-        </div>
+            <div class="navbar-nav bg-white navbar-light w-100 navbar-text text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/main-nav.html' %}  
+            </div>
         </nav>
-    </header>
+</header>
 
     {% if messages %}
         <div class="message-container"></div>
