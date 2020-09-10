@@ -1,130 +1,104 @@
 [
-   {
+    {
       "pk":1,
-      "model":"products.product",
-      "fields":{
-         "sku":"0001",
-         "name":"Alebrije",
-         "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur aliquid sequi reprehenderit labore quis impedit quas aperiam eaque, architecto illo beatae nesciunt voluptatibus ducimus! Non reprehenderit perspiciatis harum iusto illum!",
-         "price":250,
-         "rating":4.6,
-         "image_url":"https://www.behance.net/tepetonga",
-         "image":"alebrije.png"
-      }
-   },
-   {
-      "pk":2,
-      "model":"products.product",
-      "fields":{
-         "sku":"0002",
-         "name":"Amor",
-         "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur aliquid sequi reprehenderit labore quis impedit quas aperiam eaque, architecto illo beatae nesciunt voluptatibus ducimus! Non reprehenderit perspiciatis harum iusto illum!",
-         "price":250,
-         "rating":4.6,
-         "image_url":"https://www.behance.net/tepetonga",
-         "image":"amor.png"
-      }
-   },
-      {
-      "pk":3,
       "model":"products.product",
       "fields":{
          "sku":"0003",
          "name":"Asado Estelar",
          "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur aliquid sequi reprehenderit labore quis impedit quas aperiam eaque, architecto illo beatae nesciunt voluptatibus ducimus! Non reprehenderit perspiciatis harum iusto illum!",
-         "price":250,
+         "price":40,
          "rating":4.6,
          "image_url":"https://www.behance.net/tepetonga",
          "image":"asado_estelar.png"
       }
    },
    {
-      "pk":4,
+      "pk":2,
       "model":"products.product",
       "fields":{
          "sku":"0004",
          "name":"Catrina",
          "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur aliquid sequi reprehenderit labore quis impedit quas aperiam eaque, architecto illo beatae nesciunt voluptatibus ducimus! Non reprehenderit perspiciatis harum iusto illum!",
-         "price":250,
-         "rating":4.6,
+         "price":35,
+         "rating":3.6,
          "image_url":"https://www.behance.net/tepetonga",
          "image":"catrina.png"
       }
    },
       {
-      "pk":5,
+      "pk":3,
       "model":"products.product",
       "fields":{
          "sku":"0005",
          "name":"Geometría Sagrada",
          "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur aliquid sequi reprehenderit labore quis impedit quas aperiam eaque, architecto illo beatae nesciunt voluptatibus ducimus! Non reprehenderit perspiciatis harum iusto illum!",
-         "price":250,
+         "price":45,
          "rating":4.6,
          "image_url":"https://www.behance.net/tepetonga",
          "image":"geometria_sagrada.png"
       }
    },
    {
-      "pk":6,
+      "pk":4,
       "model":"products.product",
       "fields":{
          "sku":"0006",
          "name":"Helado",
          "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur aliquid sequi reprehenderit labore quis impedit quas aperiam eaque, architecto illo beatae nesciunt voluptatibus ducimus! Non reprehenderit perspiciatis harum iusto illum!",
-         "price":250,
-         "rating":4.6,
+         "price":35,
+         "rating":2.6,
          "image_url":"https://www.behance.net/tepetonga",
          "image":"helado.png"
+      }
+   },
+      {
+      "pk":5,
+      "model":"products.product",
+      "fields":{
+         "sku":"0007",
+         "name":"Meditación",
+         "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur aliquid sequi reprehenderit labore quis impedit quas aperiam eaque, architecto illo beatae nesciunt voluptatibus ducimus! Non reprehenderit perspiciatis harum iusto illum!",
+         "price":20,
+         "rating":4.9,
+         "image_url":"https://www.behance.net/tepetonga",
+         "image":"meditacion.png"
+      }
+   },
+   {
+      "pk":6,
+      "model":"products.product",
+      "fields":{
+         "sku":"0008",
+         "name":"Pescador",
+         "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur aliquid sequi reprehenderit labore quis impedit quas aperiam eaque, architecto illo beatae nesciunt voluptatibus ducimus! Non reprehenderit perspiciatis harum iusto illum!",
+         "price":40,
+         "rating":4.7,
+         "image_url":"https://www.behance.net/tepetonga",
+         "image":"pescador.png"
       }
    },
       {
       "pk":7,
       "model":"products.product",
       "fields":{
-         "sku":"0007",
-         "name":"Meditación",
-         "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur aliquid sequi reprehenderit labore quis impedit quas aperiam eaque, architecto illo beatae nesciunt voluptatibus ducimus! Non reprehenderit perspiciatis harum iusto illum!",
-         "price":250,
-         "rating":4.6,
-         "image_url":"https://www.behance.net/tepetonga",
-         "image":"meditacion.png"
-      }
-   },
-   {
-      "pk":8,
-      "model":"products.product",
-      "fields":{
-         "sku":"0008",
-         "name":"Pescador",
-         "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur aliquid sequi reprehenderit labore quis impedit quas aperiam eaque, architecto illo beatae nesciunt voluptatibus ducimus! Non reprehenderit perspiciatis harum iusto illum!",
-         "price":250,
-         "rating":4.6,
-         "image_url":"https://www.behance.net/tepetonga",
-         "image":"pescador.png"
-      }
-   },
-      {
-      "pk":9,
-      "model":"products.product",
-      "fields":{
          "sku":"0009",
          "name":"Pompas de Jabón",
          "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur aliquid sequi reprehenderit labore quis impedit quas aperiam eaque, architecto illo beatae nesciunt voluptatibus ducimus! Non reprehenderit perspiciatis harum iusto illum!",
-         "price":250,
-         "rating":4.6,
+         "price":35,
+         "rating":3.6,
          "image_url":"https://www.behance.net/tepetonga",
          "image":"pompas_de_jabon.png"
       }
    },
       {
-      "pk":10,
+      "pk":8,
       "model":"products.product",
       "fields":{
          "sku":"0010",
          "name":"Viejita",
          "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur aliquid sequi reprehenderit labore quis impedit quas aperiam eaque, architecto illo beatae nesciunt voluptatibus ducimus! Non reprehenderit perspiciatis harum iusto illum!",
-         "price":250,
-         "rating":4.6,
+         "price":30,
+         "rating":4.0,
          "image_url":"https://www.behance.net/tepetonga",
          "image":"viejita.png"
       }

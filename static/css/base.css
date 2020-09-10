@@ -33,15 +33,26 @@ body {
 }
 
 #logo {
-    height: 210px;
+    height: 180px;
     padding-left: inherit;
 }
 
 #main-nav {
-    font-size: 110%;
+    font-size: larger;
     list-style-type: none;
     letter-spacing: 4px;
 }
+
+.sort-by {
+    font-size: medium;
+    list-style-type: none;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    color: #F2B442;
+}
+
 
 #main-nav, .collapse {
     float: right;

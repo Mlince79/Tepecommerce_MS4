@@ -13,7 +13,20 @@
     <div class="row container-gallery">
         <div class="product-container col-10 offset-1">
             <div class="row pleca mt-1 mb-1">
-                <div class="col-12"><img class="img-fluid max-width" src="/static/img/pleca.png" alt="Responsive image"></div>
+                <div class="col-12"><img class="img-fluid max-width" src="/static/img/pleca.png" alt="Responsive image">
+                    <ul class="navbar-nav w-auto mx-auto sort-by">
+                        <li class="nav-item dropdown">
+                            <a class="font-weight-bold ml-5 nav-link text-orange" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                SORT BY
+                            </a>
+                            <div class="dropdown-menu border-0 sort-by" aria-labelledby="all-products-link">
+                                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price: Low-High</a>
+                                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">Most Popular</a>
+                                <a href="{% url 'products' %}?sort=new" class="dropdown-item">New Illustrations</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="container-fluid gallery">
             {% for product in products %}
@@ -24,7 +37,15 @@
                             <a href="{% url 'product_detail' product.id %}" class="">
                                 <img class="" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 <div class="overlay">
-                                    <div class="content">{{ product.name }}</div>
+                                    <div class="content">{{ product.name }}
+                                        <strong>
+                                            {% if product.new %}
+                                                <small class="text-muted"><i class="fas fa-star mr-1"></i><strong>NEW</strong></small>
+                                            {% else %}
+                                                <small class="text-muted"></small>
+                                            {% endif %}
+                                        </strong>
+                                    </div>
                                 </div>
                             </a>
                         </div>
