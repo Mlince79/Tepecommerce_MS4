@@ -33,8 +33,9 @@ body {
 }
 
 #logo {
-    height: 180px;
-    padding-left: inherit;
+    height: 150px;
+    padding-left: 90px;
+    margin-top: 25px;
 }
 
 #main-nav {
@@ -81,6 +82,20 @@ a:hover {
 #illustration{
     clear: both;
     line-height: 0;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-yellow {
+    border: 1px solid black;
+}
+
+.btn-yellow:hover {
+    background-color: #F2B442;
 }
 
 /*grid*/
@@ -145,9 +160,6 @@ a:hover {
     opacity: 1;
 }
 
-.pleca {
-    
-}
 @keyframes hero-zoom {
     from {
         transform: scale(1);
@@ -218,11 +230,5 @@ a:hover {
     }
     .header-container {
         margin-top: 180px;
-    }
-}
-
-@media (min-width: 1200px){
-    .container {
-    max-width: 80%;
     }
 }

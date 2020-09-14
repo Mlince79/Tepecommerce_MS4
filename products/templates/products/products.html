@@ -22,7 +22,7 @@
                             <div class="dropdown-menu border-0 sort-by" aria-labelledby="all-products-link">
                                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price: Low-High</a>
                                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">Most Popular</a>
-                                <a href="{% url 'products' %}?sort=new" class="dropdown-item">New Illustrations</a>
+                                <a href="{% url 'products' %}?sort=new&direction=desc" class="dropdown-item">New Illustrations</a>
                             </div>
                         </li>
                     </ul>
