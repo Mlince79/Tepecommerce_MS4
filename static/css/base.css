@@ -98,6 +98,12 @@ a:hover {
     background-color: #F2B442;
 }
 
+.btn-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 /*grid*/
 
 .gallery {
