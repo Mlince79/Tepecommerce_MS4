@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
+    'about',
+    'contactemail',
 
     # Other
     'crispy_forms',
@@ -172,3 +174,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 FREE_DELIVERY_THRESHOLD = 1000
 STANDARD_DELIVERY_PERCENTAGE = 10
+
+DEFAULT_FROM_EMAIL = 'marisol.lince@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
