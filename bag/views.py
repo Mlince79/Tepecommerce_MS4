@@ -33,10 +33,10 @@ def add_to_bag(request, item_id):
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
-            messages.success(request, f'Update {product.name} quantity {bag[item_id]}')
+            messages.success(request, f'Update {product.name} quantity.{bag[item_id]}. Price includes delivery cost.')
         else:
             bag[item_id] = quantity
-            messages.success(request, f'Added {product.name} to your bag')
+            messages.success(request, f'Added {product.name} to your bag. Price includes delivery cost.')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
