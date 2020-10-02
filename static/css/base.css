@@ -132,9 +132,10 @@ input[name='q']::placeholder {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     font-size: 28px;
+    text-align: center;
 }
 
 .overlay {
@@ -147,7 +148,7 @@ input[name='q']::placeholder {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background: #F2B442;
+    background: rgb(221, 212, 212, .9);
 }
 
 .shop-now-button {
@@ -288,6 +289,12 @@ input[name='q']::placeholder {
 	color: #17a2b8; /* text-info */
 }
 
+/* -------------------------------about*/
+
+#foto {
+    border-radius:500px;
+    
+}
 /* fixed top navbar only on medium and up */
 @media only screen and (max-width: 600px) {
     #logo {
