@@ -14,18 +14,16 @@
         <div class="product-container col-10 offset-1">
             <div class="row pleca mt-1 mb-1">
                 <div class="col-12"><img class="img-fluid max-width" src="/static/img/pleca.png" alt="Responsive image">
-                    <ul class="navbar-nav w-auto mx-auto sort-by">
-                        <li class="nav-item dropdown">
-                            <a class="font-weight-bold ml-5 nav-link text-orange" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                SORT BY
-                            </a>
-                            <div class="dropdown-menu border-0 sort-by" aria-labelledby="all-products-link">
-                                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price: Low-High</a>
-                                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">Most Popular</a>
-                                <a href="{% url 'products' %}?sort=new&direction=desc" class="dropdown-item">New Illustrations</a>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle mb-2 ml-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SORT ILLUSTRATIONS BY
+                        </button>
+                        <div class="dropdown-menu border-0 sort-by" aria-labelledby="btnGroupDrop1">
+                            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price: Low-High</a>
+                            <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">Most Popular</a>
+                            <a href="{% url 'products' %}?sort=new&direction=desc" class="dropdown-item">New Illustrations</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container-fluid gallery">
@@ -40,7 +38,7 @@
                                     <div class="content">{{ product.name }}
                                         <strong>
                                             {% if product.new %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i><strong>NEW</strong></small>
+                                                <small class="text-muted"><br><i class="fas fa-star mr-1"></i><strong>NEW</strong></small>
                                             {% else %}
                                                 <small class="text-muted"></small>
                                             {% endif %}

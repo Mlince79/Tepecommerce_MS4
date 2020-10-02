@@ -40,7 +40,7 @@
     <header class="container-fluid fixed-top">
         <nav class="navbar bg-white navbar-expand-lg">
             <a class="navbar-brand" href="{% url 'home' %}">
-                <img id="logo" src="{% static "img/firma_inicio.png" %}" alt="Marcela">
+                <img id="logo" src="{% static 'img/firma_inicio.png' %}" alt="logo-home">
             </a> 
             <div class="navbar-nav bg-white navbar-light w-100 navbar-text text-right">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,6 +64,7 @@
 
     {% block content %}
     {% endblock %}
+    
     {% block page_footer %}
     <footer class="container-fluid">
         <ul class="social-networks list-group list-group-horizontal d-flex justify-content-center">
