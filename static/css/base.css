@@ -323,6 +323,13 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* -------------------------------- Contact Form */
+
+#contact-form {
+    width: 80%;
+    height: 600px;
+}
+
 /* fixed top navbar only on medium and up */
 @media only screen and (max-width: 600px) {
     #logo {

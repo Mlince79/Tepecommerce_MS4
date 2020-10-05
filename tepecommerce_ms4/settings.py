@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
+import dj_database_url
 from pathlib import Path
 
 if os.path.exists("env.py"):
@@ -48,8 +49,8 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'about',
-    'contactemail',
     'profiles',
+    'contact',
 
     # Other
     'crispy_forms',
@@ -122,11 +123,15 @@ WSGI_APPLICATION = 'tepecommerce_ms4.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME':  os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME':  os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.parse('postgres://rhlppubapjkulz:9a9ccb2bf2f46dfbe50e840a1d204d088d0f5f7d2488c5e26d19af39e0107051@ec2-54-75-150-32.eu-west-1.compute.amazonaws.com:5432/d5r1njct7hmfgd')
 }
 
 
