@@ -10,22 +10,21 @@
     </div>
 {% endblock %}
 {% block content %}
-    <div class="row container-gallery">
-        <div class="product-container col-10 offset-1">
-            <div class="row pleca mt-1 mb-1">
-                <div class="col-12"><img class="img-fluid max-width" src="/static/img/pleca.png" alt="Responsive image">
-                    <div class="btn-group" role="group">
-                        <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle mb-2 ml-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            SORT ILLUSTRATIONS BY
-                        </button>
-                        <div class="dropdown-menu border-0 sort-by" aria-labelledby="btnGroupDrop1">
-                            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price: Low-High</a>
-                            <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">Most Popular</a>
-                            <a href="{% url 'products' %}?sort=new&direction=desc" class="dropdown-item">New Illustrations</a>
-                        </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12"><img class="img-fluid pleca max-width" src="/static/img/pleca.png" alt="Responsive image"></div>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle mb-2 ml-5 rounded-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SORT ILLUSTRATIONS BY
+                    </button>
+                    <div class="dropdown-menu border-0 sort-by" aria-labelledby="btnGroupDrop1">
+                        <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price: Low-High</a>
+                        <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">Most Popular</a>
+                        <a href="{% url 'products' %}?sort=new&direction=desc" class="dropdown-item">New Illustrations</a>
                     </div>
                 </div>
-            </div>
+        </div>
+        <div class="product-container">
             <div class="container-fluid gallery">
             {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">

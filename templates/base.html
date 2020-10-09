@@ -49,10 +49,10 @@
                 {% include 'includes/main-nav.html' %}  
             </div>
         </nav>
-</header>
+    </header>
 
     {% if messages %}
-                <div class="message-container">
+        <div class="message-container">
             {% for message in messages %}
                 {% include 'includes/toasts/toast_success.html' %}
             {% endfor %}
@@ -66,16 +66,16 @@
     {% endblock %}
     
     {% block page_footer %}
-    <footer class="container-fluid">
-        <ul class="social-networks list-group list-group-horizontal d-flex justify-content-center">
-            <li class="list-group-item mr-5">
-                <a href="https://www.instagram.com/marcelatepetonga/?hl=sv" target="_blank"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li class="list-group-item ml-5">
-                <a href="https://www.behance.net/tepetonga" target="_blank"><i class="fab fa-behance"></i></a>
-            </li>
-        </ul>
-    </footer>
+        <footer class="container-fluid">
+            <ul class="social-networks list-group list-group-horizontal d-flex justify-content-center">
+                <li class="list-group-item mr-5">
+                    <a href="https://www.instagram.com/marcelatepetonga/?hl=sv" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="list-group-item ml-5">
+                    <a href="https://www.behance.net/tepetonga" target="_blank"><i class="fab fa-behance"></i></a>
+                </li>
+            </ul>
+        </footer>
     {% endblock %}
     {% block postloadjs %}
      <script type="text/javascript">

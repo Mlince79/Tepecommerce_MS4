@@ -26,8 +26,8 @@
                 {% endif %}
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-5">
+            <div class="col-9 col-md-6 col-lg-4 mt-5 text-description">
+                <div class="product-details-container mb-5">
                     <p class="mb-0">{{ product.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">{{ product.price }}€</p>
                     <p class="lead mb-0 text-left">{{ product.size }}</p>
@@ -92,7 +92,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col{% if s %}-12 mt-2{% endif %}">
                                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                                     <span class="icon">
@@ -106,26 +105,31 @@
                             {% endwith %}
                         </div>
                     </form>
+                </div>
             </div>
-        <div class="col-12 my-auto py-1 py-lg-0 shopping-bag">
-            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                <li class="list-inline-item">
-                    <a class="{% if grand_total %}text-black font-weight-bold{% else %}text-orange{% endif %} nav-link" href="{% url 'view_bag' %}">
-                        <div class="text-center">
-                            <div><img src="/static/img/carrito.png" alt="Marcela" class="responsive mx-auto d-block"></div>
-                            <p class="my-0">
-                                {% if grand_total %}
-                                    {{ grand_total|floatformat:2 }}€
-                                {% else %}
-                                    0.00 €
-                                {% endif %}
-                            </p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            <div class="col-auto ml-auto shopping-bag mt-5">
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    <li class="list-inline-item mt-5">
+                        <a class="{% if grand_total %}checkout text-black font-weight-bold{% else %}text-orange{% endif %} nav-link" href="{% url 'view_bag' %}">
+                            <div class="text-center">
+                                <div><img src="/static/img/carrito.png" alt="Marcela" class="mx-auto d-block"></div>
+                                <p class="my-0"> CHECKOUT </p>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                        {{ grand_total|floatformat:2 }}€
+                                    {% else %}
+                                        0.00 €
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        </div>
+    </div>
+
+
 {% endblock %}
 
 {% block postloadjs %}

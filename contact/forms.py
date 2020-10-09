@@ -2,24 +2,15 @@ from django import forms
 from .models import Contact
 
 class ContactForm(forms.Form):
-
-    class Meta:
-        model = Contact
-        fields = ('name', 'email', 'subject'
-                  'message')
+    contact_name = forms.CharField(required=True)
+    contact_email = forms.EmailField(required=True)
+    content = forms.CharField(
+        required=True,
+        widget=forms.Textarea
+    )
 
     def __init__(self, *args, **kwargs):
-        """
-        Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
-        """
-        super().__init__(*args, **kwargs)
-        placeholders = {
-            'name': 'Full Name',
-            'email': 'Email Address',
-            'subject': 'Subject',
-            'message': 'Message',
-        }
-
-        for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-black rounded-0'
+        super(ContactForm, self).__init__(*args, **kwargs)
+        self.fields['contact_name'].label = "Your name:"
+        self.fields['contact_email'].label = "Your email:"
+        self.fields['content'].label = "What do you want to say?"
