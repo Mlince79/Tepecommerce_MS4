@@ -303,7 +303,8 @@ input[name='q']::placeholder {
 /* -------------------------------- Products*/
 
 .pleca {
-    width: 100%;
+    width: 99%;
+    padding-left: 20px;
 }
 
 .checkout {
