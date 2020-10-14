@@ -51,11 +51,11 @@ Marcela has a very particular style that makes her site stand out from the other
 * Product visuals and descriptions
 The detail of the product will show a description of her technique and the materials she used. 
 * Social media as an extension of the business website
-Instagram and Behance account.
+Instagram and Behance account will be present on each page.
 * Shop
-    - Product detail, where users can add items to their shopping bag.
+    - Product detail area will allow users to add items to their shopping bag.
     - Shopping bag, where users can add or remove items.
-    - Checkout provide by stripe, where users can make their purchase.
+    - Checkout provides by stripe, where users can make their purchase.
 
 <details>
     <summary>Click to see - User Stories Table</summary>
@@ -70,12 +70,12 @@ User story ID | As a | Want to be able to... | So that I can...
 3 - | Shopper | Easily view the total of my purchase at any time | See how much I want to spend
 |             || **Purchasing and Checkout** ||
 4 - | Shopper | Easily select the quantity of a product when purchasing it. | Ensure I do not accidentally select the wrong product or quantity
-5 - | Shopper | View items in my bag to be purchased	| Identify the total cost of my items and all items I will receive
-6 - | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout
+5 - | Shopper | View items in my bag to be bought	| Identify the total cost of my articles and all items I will receive
+6 - | Shopper | Adjust the number of individual items in my bag | Easily make changes to my purchase before checkout
 7 - | Shopper | Easily enter my payment information | Check out quickly and with no hassles
 8 - | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase 
-9 - | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes
-10 - | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records
+9 - | Shopper | View an order confirmation after checkout | Verify that I haven't created any mistakes
+10 - | Shopper | Receive an email confirmation after checking out | Keep the proof of what I've purchased for my records
 |             || **Admin and Store Management** ||           |
 11 - | Store Owner | Add an illustration | Add new illustrations in my web-shop
 12 - | Store Owner | Edit/Update an illustration | Change image, prices and description
@@ -91,11 +91,20 @@ User story ID | As a | Want to be able to... | So that I can...
 --------------|---------|------------------------|-----------------
 |                 || **Registration and User Accounts**	||		       |
 1 | Site User | Easily register for an account | Have a personal account and be able to view my profile
-2 | Site User | Easily login and logout | Access my personal account information 
+2 | Site User | Easily login and logout | Access my personal information 
 3 | Site User | Easily recover my password in case i forget it | Recover access to my account
 4 | Site User | Receive an email confirmation after registering | Verify that my account registration was successful 
-5 | Site User | Have a personalized user profile | View my personal order history and order confirmations, and save my payment information
+5 | Site User | Have a personalized user profile | View my order history and order confirmations, and save my payment information
 </details>
+
+## Technologies Used
+See requirements.txt
+HTML5, CSS, Bootstrap.
+
+## Testing
+[![Build Status](https://travis-ci.org/Mlince79/Tepecommerce_MS4.svg?branch=master)](https://travis-ci.org/Mlince79/Tepecommerce_MS4)
+
+
 
 
 
