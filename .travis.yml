@@ -1,9 +1,6 @@
 language: python
 python:
-  - "3.8"
-# command to install dependencies
-install:
-  - pip install -r requirements.txt
-# command to run tests
+    - "3.8"
+install: "pip3 install -r requirements.txt"
 script:
-  - SECRET-KEY=""./manage.pytest
+    - SECRET_KEY="whatever" ./manage.py test
