@@ -105,10 +105,74 @@ HTML5, CSS, Bootstrap.
 <details>
     <summary>Click to see user test</summary>
 
+* Base Html
+- Display logo image.
+- Display menu and active links after hover and after a click.
+Display social media, Instagram and Behance and confirm active hover and working links opening a separate page. 
+
 * Home
-- 
+- Display home image.
 
+* My Shop
+- Display illustrations images. 
+- Display button to sort illustrations by Price Low-High, Most Popular and New Illustrations.
+- Confirm the functionality of the sort illustrations button.
+- Confirm the display overlay is working on each image and showing the complete and correct information.
 
+* My Shop/detail product
+- Display image illustration correctly.
+- Display all the information about the piece correctly: name, price, size, rating, description.
+- Display quantity button and be sure that customers can only allow buying 2 of each image. 
+- Confirm that buttons Keep Shopping and Add to the bag are working. 
+- Confirm those toast messages appears when adding a new item and when adding more items. 
+- Confirm checkout outline border appears after adding the first item in the shopping bag. 
+- Confirm checkout button is displayed and working correctly and showing the correct amount. 
+
+* Bag
+- Shopping bag will display all the illustrations added to the bag. 
+- Show: title, size, price quantity and subtotal of each image. 
+- Show the correct total order amount to be pay, delivery cost and total, including delivery cost.
+- Keep shopping and secure checkout button working. 
+
+* Checkout
+- Checkout form displays correctly.
+- Order summary shows the total amount of items. 
+- Item includes name, size, quantity and subtotal: order total, delivery and total, including delivery cost. 
+- The form has all the required fields. And show with a (*) the ones mandatory.
+- Details: Full name and Email Address.
+- Delivery: Phone number, Street Address 1 and 2, Town or City, Country, State or Locality Postal Code
+- Country - Display all the nations. 
+- Payment 
+- Complete the order and adjust the bag button shows correctly and are working. 
+- The message that shows the amount of money that will be a charge is displayed correctly and in red. 
+
+* Checkout success
+- Order information is displayed. 
+- A notification that an email has been sent is shown as well. 
+- Toast message is displayed.
+- Link to go-to products is displayed and working. 
+
+* About 
+- Display Marcelas illustration image.
+- Display text.
+
+* Contact 
+- Display illustration image.
+- Display form to contact. 
+- Verification fields are active.
+- Submit button working. 
+
+* For the owner of the website
+- Will have access to products/add/ 
+- Available login. A toast message will be shown after a successful login. 
+- Access direct to Product Management, where the owner will be able to add new products by filling out the form. 
+- Buttons of Cancel, Add Product, Sign Out will be active. 
+- Cancel = Will redirect owner to the products section.
+- Add Product = Will add a new product. 
+- Sign Out = Owner will be able to logout. 
+- Products section. The owner will be able to see her account active. On click, a dropdown will be displayed to have access to Product Management and logout. 
+- The owner can edit or delete illustrations in the products detail page. 
+- Sign out page, the owner will be able to logout or to go back to product management. After signing out, the owner will get a toast message and redirect to the homepage. 
 
 
 </details>

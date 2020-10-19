@@ -23,6 +23,20 @@
                         <a href="{% url 'products' %}?sort=new&direction=desc" class="dropdown-item">New Illustrations</a>
                     </div>
                 </div>
+            {% if request.user.is_superuser %}
+            <li class="list-inline-item dropdown">
+                <a class="text-orange nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="text-center">
+                        <div><i class="fas fa-user fa-lg"></i></div>
+                        <p class="my-0">My account</p>
+                    </div>
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <a href="{% url 'add_product'%}" class="dropdown-item">Product Management</a>
+                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                    {% endif %}
+                </div>
+            </li>
         </div>
         <div class="product-container">
             <div class="container-fluid gallery">

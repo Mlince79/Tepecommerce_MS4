@@ -318,6 +318,11 @@ input[name='q']::placeholder {
 
 }
 
+/* -------------------------------- admin */
+.allauth-form-inner-content a {
+    color: black;
+}
+
 /* fixed top navbar only on medium and up */
 @media only screen and (max-width: 600px) {
     #logo {
@@ -357,7 +362,12 @@ input[name='q']::placeholder {
     .btn {
         font-size: 1re;
     }
+    .shopping-bag {
+    margin-left: auto !important;
+    margin-top: auto !important;
+    }
 }
+
 
 @media only screen and (max-width: 990px) {
     .w-100 {
@@ -385,5 +395,8 @@ input[name='q']::placeholder {
     }
     .header-container {
         margin-top: 180px;
+    }
+    .nav-link {
+    display: table-footer-group;
     }
 }
