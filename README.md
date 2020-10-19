@@ -162,7 +162,7 @@ Display social media, Instagram and Behance and confirm active hover and working
 - Verification fields are active.
 - Submit button working. 
 
-* For the owner of the website
+***For the owner of the website***
 - Will have access to products/add/ 
 - Available login. A toast message will be shown after a successful login. 
 - Access direct to Product Management, where the owner will be able to add new products by filling out the form. 
