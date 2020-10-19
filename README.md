@@ -105,21 +105,21 @@ HTML5, CSS, Bootstrap.
 <details>
     <summary>Click to see user test</summary>
 
-* Base Html
+***Base Html***
 - Display logo image.
 - Display menu and active links after hover and after a click.
 Display social media, Instagram and Behance and confirm active hover and working links opening a separate page. 
 
-* Home
+***Home***
 - Display home image.
 
-* My Shop
+***My Shop***
 - Display illustrations images. 
 - Display button to sort illustrations by Price Low-High, Most Popular and New Illustrations.
 - Confirm the functionality of the sort illustrations button.
 - Confirm the display overlay is working on each image and showing the complete and correct information.
 
-* My Shop/detail product
+***My Shop/detail product***
 - Display image illustration correctly.
 - Display all the information about the piece correctly: name, price, size, rating, description.
 - Display quantity button and be sure that customers can only allow buying 2 of each image. 
@@ -128,13 +128,13 @@ Display social media, Instagram and Behance and confirm active hover and working
 - Confirm checkout outline border appears after adding the first item in the shopping bag. 
 - Confirm checkout button is displayed and working correctly and showing the correct amount. 
 
-* Bag
+***Bag***
 - Shopping bag will display all the illustrations added to the bag. 
 - Show: title, size, price quantity and subtotal of each image. 
 - Show the correct total order amount to be pay, delivery cost and total, including delivery cost.
 - Keep shopping and secure checkout button working. 
 
-* Checkout
+***Checkout***
 - Checkout form displays correctly.
 - Order summary shows the total amount of items. 
 - Item includes name, size, quantity and subtotal: order total, delivery and total, including delivery cost. 
@@ -146,17 +146,17 @@ Display social media, Instagram and Behance and confirm active hover and working
 - Complete the order and adjust the bag button shows correctly and are working. 
 - The message that shows the amount of money that will be a charge is displayed correctly and in red. 
 
-* Checkout success
+***Checkout success***
 - Order information is displayed. 
 - A notification that an email has been sent is shown as well. 
 - Toast message is displayed.
 - Link to go-to products is displayed and working. 
 
-* About 
+***About***
 - Display Marcelas illustration image.
 - Display text.
 
-* Contact 
+***Contact***
 - Display illustration image.
 - Display form to contact. 
 - Verification fields are active.
