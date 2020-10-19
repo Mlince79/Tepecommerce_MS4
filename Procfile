@@ -1,0 +1,1 @@
+web: gunicorn tepecommerce_ms4.wsgi:application
