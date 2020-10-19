@@ -118,8 +118,8 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'tepecommerce_ms4.wsgi.application'
 
-# Database
-# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+Database
+https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -127,7 +127,6 @@ DATABASES = {
         'NAME':  os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 
 

@@ -1,4 +1,4 @@
-/*header*/
+/* -------------------------------home*/
 html {
     height: 100%;
 }
@@ -17,30 +17,18 @@ body {
     height: calc(70vh - 1px);
 }
 
-.navbar {
-    padding-right: 110px;
-}
-
-.navbar-brand {
-    padding-left: 50px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: black;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #777777;
-}
-
-.bg-light {
-    background-color: white;
-}
-
 #logo {
     height: 150px;
     padding-left: 90px;
     margin-top: 25px;
+}
+
+ /*navbar*/
+ .navbar-brand {
+    padding-left: 50px;
+}
+.navbar {
+    padding-right: 110px;
 }
 
 #main-nav {
@@ -48,17 +36,6 @@ body {
     list-style-type: none;
     letter-spacing: 4px;
 }
-
-.sort-by {
-    font-size: medium;
-    list-style-type: none;
-    letter-spacing: 2px;
-}
-
-a:hover {
-    color: #F2B442;
-}
-
 
 #main-nav, .collapse {
     float: right;
@@ -68,49 +45,6 @@ a:hover {
     text-decoration: none;
     color: inherit;
 
-}
-
-.navbar-default a:hover {
-    border-bottom: 1px solid #777777;
-    color: #777777;
-}
-
-.responsive {
-    width: 50%;
-    height: auto;
-}
-
-.logo-font{
-    padding-top: 55px;
-}
-
-#illustration{
-    clear: both;
-    line-height: 0;
-}
-
-.btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
-}
-
-.btn-yellow {
-    border: 1px solid black;
-}
-
-.btn-yellow:hover {
-    background-color: #F2B442;
-}
-
-.btn-link,
-.update-link,
-.remove-item {
-    cursor: pointer;
-}
-
-input[name='q']::placeholder {
-    color: #aab7c4;
 }
 
 /* -------------------------------grid*/
@@ -152,7 +86,7 @@ input[name='q']::placeholder {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background: #f9f9f9b0;
+    background: #f9f9f9c0;
 }
 
 
@@ -207,6 +141,30 @@ input[name='q']::placeholder {
     right: 150px;
 
     position: absolute;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-yellow {
+    border: 1px solid black;
+}
+
+.btn-yellow:hover {
+    background-color: #F2B442;
+}
+
+.btn-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
 }
 /* ------------------------------- bootstrap toasts */
 
@@ -395,6 +353,9 @@ input[name='q']::placeholder {
     }
     .message-container {
         left: 16%;
+    }
+    .btn {
+        font-size: 1re;
     }
 }
 

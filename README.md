@@ -102,6 +102,16 @@ See requirements.txt
 HTML5, CSS, Bootstrap.
 
 ## Testing
+<details>
+    <summary>Click to see user test</summary>
+
+* Home
+- 
+
+
+
+
+</details>
 [![Build Status](https://travis-ci.org/Mlince79/Tepecommerce_MS4.svg?branch=master)](https://travis-ci.org/Mlince79/Tepecommerce_MS4)
 
 
