@@ -178,6 +178,15 @@ Display social media, Instagram and Behance and confirm active hover and working
 </details>
 [![Build Status](https://travis-ci.org/Mlince79/Tepecommerce_MS4.svg?branch=master)](https://travis-ci.org/Mlince79/Tepecommerce_MS4)
 
+I tested the website user experience in different devices. 
+
+# Errors: 
+I have limited the number of shops to only two illustrations. As there is no inventory test implemented, the user can add more items to the shopping bag. 
+
+## Deployment
+
+
+
 
 
 
