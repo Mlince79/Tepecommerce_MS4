@@ -13,9 +13,15 @@ import os
 import dj_database_url
 from pathlib import Path
 
-from os import path
-if path.exists("env.py"):
-  import env 
+if os.path.exists("env.py"):
+    import env
+
+
+if os.environ.get('DEVELOPMENT'):
+    development = True
+else: 
+    development = False
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,13 +30,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = os.environ.get('SECRET_KEY', 'some value')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = development
 
-ALLOWED_HOSTS = ['ecommercetepe.herokuapp.com', 'localhost']
-
+if development: 
+    ALLOWED_HOSTS = ['localhost']
+else:
+    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 # Application definition
 
@@ -109,6 +117,8 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
+WSGI_APPLICATION = 'tepecommerce_ms4.wsgi.application'
+
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
@@ -117,7 +127,6 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
-WSGI_APPLICATION = 'tepecommerce_ms4.wsgi.application'
 
 # Database
 #https://docs.djangoproject.com/en/3.1/ref/settings/#databases
