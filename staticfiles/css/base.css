@@ -1,0 +1,402 @@
+/* -------------------------------home*/
+html {
+    height: 100%;
+}
+
+.header-container{
+    margin-top: 60px;
+}
+
+body {
+    color: black;
+    font-family: Oswald;
+    height: calc(70vh - 1px);
+}
+
+.home-img {
+    height: calc(70vh - 1px);
+}
+
+#logo {
+    height: 150px;
+    padding-left: 90px;
+    margin-top: 25px;
+}
+
+ /*navbar*/
+ .navbar-brand {
+    padding-left: 50px;
+}
+.navbar {
+    padding-right: 110px;
+}
+
+#main-nav {
+    font-size: larger;
+    list-style-type: none;
+    letter-spacing: 4px;
+}
+
+#main-nav, .collapse {
+    float: right;
+}
+
+#main-nav, a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+/* -------------------------------grid*/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.grid {
+    max-width: 100%;
+}
+
+.grid img {
+    margin-top: 0;
+    vertical-align: inherit;
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: #f9f9f9c0;
+}
+
+
+.shop-now-button {
+    background: #F2B442;;
+    color: white;
+    min-width: 260px;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus {
+    background: rgb(179, 102, 3);
+    color: white;
+}
+
+.my-0:hover p {
+    color: #F2B442;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.form-check-label {
+    margin-left: 50px;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#cover-text #cover-text h2 {
+    color: black;
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 200px;
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-yellow {
+    border: 1px solid black;
+}
+
+.btn-yellow:hover {
+    background-color: #F2B442;
+}
+
+.btn-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 15%;
+    left: 76%;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+#logo2 {
+    height: 45px;
+}
+
+.bg-success {
+    background-color: white!important;;
+}
+
+/* ------------------------------- footer */
+
+.list-group-item {
+    text-align: center;
+    border: 0;
+    font-size: 180%;
+}
+
+/* ------------------------------- Allauth form formatting */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8; /* text-info */
+}
+
+/* -------------------------------about*/
+
+#foto {
+    border-radius:500px; 
+}
+
+/* -------------------------------- Products*/
+
+.pleca {
+    width: 99%;
+    padding-left: 20px;
+}
+
+.checkout {
+    border: 3px solid black;
+
+}
+
+/* -------------------------------- Product Detail */
+
+.shopping-bag {
+    margin-left: 5px !important;
+    margin-top: 0px !important;;
+}
+
+
+/* -------------------------------- Product Form */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: #dc3545;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 0;
+}
+
+/* -------------------------------- Contact Form */
+
+#contact-img {
+    margin-left: 200px;
+    height: calc(70vh - 1px);
+}
+
+#contact-form {
+    width: 80%;
+
+}
+
+/* -------------------------------- admin */
+.allauth-form-inner-content a {
+    color: black;
+}
+
+/* fixed top navbar only on medium and up */
+@media only screen and (max-width: 600px) {
+    #logo {
+        height: 100px;
+        padding-left: 0;
+    }
+    #foto {
+    width:50%; 
+    }
+    .navbar {
+        padding-right: 10px;
+    }
+    .navbar-brand {
+        padding-left: inherit;
+        margin-right: 0;
+    }
+    .navbar-brand {
+    width: 70%;
+    }
+    .h-100 {
+    height: 82%!important;
+    }
+    #contact-form {
+    width: 100%;
+    }
+    .home-img {
+    height: calc(55vh - 1px);
+    }
+    .text-description {
+    max-width: 100%;
+    flex: none;
+    margin-top: 0!important;
+    }
+    .message-container {
+        left: 16%;
+    }
+    .btn {
+        font-size: 1re;
+    }
+    .shopping-bag {
+    margin-left: auto !important;
+    margin-top: auto !important;
+    }
+}
+
+
+@media only screen and (max-width: 990px) {
+    .w-100 {
+        display: contents;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-container {
+    padding-top: 164px;
+    }
+    #hero-image{
+        height: 50%;
+        width: 50%;
+    }
+     .responsive {
+    width: 55%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .responsive {
+    width: 75%;
+    padding-top: 30px;
+    }
+    .header-container {
+        margin-top: 180px;
+    }
+    .nav-link {
+    display: table-footer-group;
+    }
+}
