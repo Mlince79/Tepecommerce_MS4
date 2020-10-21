@@ -9,7 +9,7 @@
          "price":40,
          "rating":4.6,
          "image_url":"https://www.behance.net/tepetonga",
-         "image":"asado_estelar.png"
+         "image":"asado_estelar.jpg"
       }
    },
    {
@@ -22,7 +22,7 @@
          "price":35,
          "rating":3.6,
          "image_url":"https://www.behance.net/tepetonga",
-         "image":"catrina.png"
+         "image":"catrina.jpg"
       }
    },
       {
@@ -35,7 +35,7 @@
          "price":45,
          "rating":4.6,
          "image_url":"https://www.behance.net/tepetonga",
-         "image":"geometria_sagrada.png"
+         "image":"geometria_sagrada.jpg"
       }
    },
    {
@@ -48,7 +48,7 @@
          "price":35,
          "rating":2.6,
          "image_url":"https://www.behance.net/tepetonga",
-         "image":"helado.png"
+         "image":"helado.jpg"
       }
    },
       {
@@ -61,7 +61,7 @@
          "price":20,
          "rating":4.9,
          "image_url":"https://www.behance.net/tepetonga",
-         "image":"meditacion.png"
+         "image":"meditacion.jpg"
       }
    },
    {
@@ -74,7 +74,7 @@
          "price":40,
          "rating":4.7,
          "image_url":"https://www.behance.net/tepetonga",
-         "image":"pescador.png"
+         "image":"pescador.jpg"
       }
    },
       {
@@ -87,7 +87,7 @@
          "price":35,
          "rating":3.6,
          "image_url":"https://www.behance.net/tepetonga",
-         "image":"pompas_de_jabon.png"
+         "image":"pompas_de_jabon.jpg"
       }
    },
       {
@@ -100,7 +100,7 @@
          "price":30,
          "rating":4.0,
          "image_url":"https://www.behance.net/tepetonga",
-         "image":"viejita.png"
+         "image":"viejita.jpg"
       }
    }
 ]
