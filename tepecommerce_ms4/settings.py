@@ -186,7 +186,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'tepecommerce_ms4/static')
+]
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
@@ -197,7 +200,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 if 'USE_AWS' in os.environ:
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'ecommercetepe'
-    AWS_S3_REGION_NAME = 'ue-central-1'
+    AWS_S3_REGION_NAME = 'eu-north-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
