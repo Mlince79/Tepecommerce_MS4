@@ -242,6 +242,7 @@ else:
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 
+# Testing contact code
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # DEFAULT_FROM_EMAIL = 'testing@example.com'
 # EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
