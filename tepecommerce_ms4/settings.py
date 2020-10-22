@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 import dj_database_url
 from pathlib import Path
+import sys
 
 
 if os.path.exists("env.py"):
@@ -230,9 +231,13 @@ STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
 if 'DEVELOPMENT' in os.environ:
+    print("This should not be output")
+    sys.stdout.flush()
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'tepetonga.79@gmail.com'
 else:
+    print("else statement reached")
+    sys.stdout.flush()
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
     EMAIL_PORT = 587
@@ -240,6 +245,12 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+    print("Email Host User: " + EMAIL_HOST_USER)
+    sys.stdout.flush()
+    print("Email Host Password: " + EMAIL_HOST_PASSWORD)
+    sys.stdout.flush()
+    print("Default From Email: " + DEFAULT_FROM_EMAIL)
+    sys.stdout.flush()
 
 
 # Testing contact code
