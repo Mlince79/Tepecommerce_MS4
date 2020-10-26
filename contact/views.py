@@ -16,7 +16,9 @@ def contact(request):
 
         if form.is_valid():
                 messages.success(
-                    request, "Thank you for your email. Please expect a response from me as soon as possible.")
+                    request,
+                    "Thank you for your email.
+                    Please expect a response from me as soon as possible.")
                 contact_name = request.POST.get(
                     'contact_name', '')
                 contact_email = request.POST.get(
@@ -24,7 +26,8 @@ def contact(request):
                 form_content = request.POST.get('content', '')
                 # Email the profile with the
                 # contact information
-                template = get_template('contact/confirmation_sent_email/contact_template.txt')
+                template = get_template(
+                    'contact/confirmation_sent_email/contact_template.txt')
                 context = {
                     'contact_name': contact_name,
                     'contact_email': contact_email,

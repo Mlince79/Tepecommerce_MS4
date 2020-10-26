@@ -11,17 +11,11 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 import dj_database_url
-from pathlib import Path
-import sys
-
-
-if os.path.exists("env.py"):
-    import env
 
 
 if os.environ.get('DEVELOPMENT'):
     development = True
-else: 
+else:
     development = False
 
 
@@ -97,7 +91,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',  # required by allauth
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -140,7 +134,7 @@ LOGIN_REDIRECT_URL = '/'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default' : dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
@@ -250,3 +244,4 @@ else:
 # EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
 # EMAIL_USE_TLS = False
 # EMAIL_PORT = 1025
+
