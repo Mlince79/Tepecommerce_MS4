@@ -386,6 +386,9 @@ input[name='q']::placeholder {
      .responsive {
     width: 55%;
     }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 1024px) {

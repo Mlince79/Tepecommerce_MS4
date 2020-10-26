@@ -185,6 +185,112 @@ I have limited the number of shops to only two illustrations. As there is no inv
 
 ## Deployment
 
+<details>
+    <summary>Click to see - Deployment Steps </summary>
+
+### Local Development
+* I used the gitpod-full-template from CODE INSTITUTE.
+* Created my repository in Github. 
+* I then opened my Gitpod to create my workspace there. 
+    - I installed django 
+    - And created my project 
+* Created my .gitingore file and added the following:
+    - env.py
+    - *.sqlite3
+    - *.pyc
+    - __pychache__
+* Create a env.py file to have my SECRET_KEY
+* Did changes in settings.py
+    * DEVELOPMENT=True
+* Run `python3 manage.py runserver`
+* I ran the initial migration and created a superuser to log into the admin. 
+* Did the initial commit to Github.
+
+
+### Stripe Payment in Local Development
+* Set up a Stipe account
+* Add js stripe code block
+* The following keys should be add to env.py and Config Vars in Heroku 
+    * STRIPE_PUBLIC_KEY=(From the test API key
+    * STRIPE_SECRET_KEY=(From the test API key)
+    * STRIPE_WH_SECRET=(From the endpoint made for Heroku)
+* I made test to confirm that the pyment has succed. 
+
+
+### Setting Up Email Google
+* 2-step verification needs to be set, to create an app password specific to our Django app to allow to authenticate and use gmail account.
+* Settings.py changes
+if 'DEVELOPMENT' in os.environ:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_USE_TLS = True
+    EMAIL_PORT = 587
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
+
+
+### Deploy to Heroku
+* Create a new app in Heroku
+* In the Heroku website create a PostgreSQL
+* Include it in env.py and include it in config.vars as DATABASE_URL=(Heroku database URI)
+* Install dj_database_url, and psycopg2, gunicorn
+* Settings.py
+
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default' : dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME':  os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
+DEBUG = development
+
+if os.environ.get('DEVELOPMENT'):
+    development = True
+else:
+    development = False
+
+
+ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME'), 'localhost']
+
+* Create Procfile 
+* Add Stripe -> Developers -> Webhooks endpoint
+* Set your other config vars
+    * DATABASE_URL
+    * EMAIL_HOST_USER
+    * EMAIL_HOST_PASSWORD
+    * SECRET_KEY
+    * STRIPE_PUBLIC_KEY
+    * STRIPE_SECRET_KEY
+    * STRIPE_WH_SECRET
+* Conect App to GitHub
+
+
+</details>
+
+[Back To Top](#table-of-contents)
+&nbsp;
+
+## Credits
+
+### Content
+- The code of this project was created based on the boutiqueado [CODE INSTITUTE](https://github.com/ckz8780/boutique_ado_v1/tree/933797d5e14d6c3f072df31adf0ca6f938d02218)
+
+### Media
+- The design and illustrations are the owner (Marcela Ruiz Barba) materials
+### Acknowledgements
+
+- I received inspiration for this project from  [CODE INSTITUTE](https://github.com/ckz8780/boutique_ado_v1/tree/933797d5e14d6c3f072df31adf0ca6f938d02218)
 
 
 
