@@ -1,6 +1,6 @@
 # Tepe - e-commerce
 
-<img src="https://raw.githubusercontent.com/Mlince79/Tepecommerce_MS4/master/site/documentation/static/img/laptop-tablet-phone-pc.jpg" style="margin: 0;">
+<img src="https://github.com/Mlince79/Tepecommerce_MS4/blob/master/site/documentation/static/img/laptop-tablet-phone-pc.jpg" style="margin: 0;">
 
 Tepe is Marcela's Ruiz Barba Illustrator artist first e-commerce website. She has an Instagram account and a Behance profile where she is always very active in updating new content.
 With this page, she will be able to offer her followers the possibility to buy some of her illustrations. 
@@ -219,10 +219,10 @@ I have limited the number of shops to only two illustrations. As there is no inv
 
 ### Setting Up Email Google
 * 2-step verification needs to be set, to create an app password specific to our Django app to allow to authenticate and use gmail account.
-* Settings.py changes
+* Settings.py changes.
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+    DEFAULT_FROM_EMAIL = 'test@example.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
